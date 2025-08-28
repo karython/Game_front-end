@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desenvolvedor Cósmico - Jogo Frontend</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="phase-counter">Fase: <span id="currentPhase">1</span>/20</div>
+            <h1 class="title">Desenvolvedor Cósmico</h1>
+            <p class="subtitle">Missão: Reconstruir as Interfaces Digitais do Universo</p>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+        </div>
+
+        <div class="game-area">
+            <div class="left-panel">
+                <div class="story-section">
+                    <h2 class="preview-label" id="phaseTitle">Fase 1: O Despertar Digital</h2>
+                    <p class="story-text" id="storyText">
+                        Você é um Desenvolvedor Cósmico que acabou de chegar ao Planeta HTML-5. 
+                        A civilização local perdeu toda sua estrutura digital após uma tempestade cósmica. 
+                        Sua primeira missão é recriar a estrutura básica de uma página web para restaurar 
+                        a comunicação planetária.
+                    
+                    </p>
+                    <p>
+                        <strong>Lembre-se que toda tag deve ser aberta e fechada corretamente. Exemplo:
+                        <code>&lt;tag&gt;Conteúdo&lt;/tag&gt;</code>
+                    </strong></p><br>
+
+                    <div class="challenge-text" id="challengeText">
+                        🎯 Desafio: Crie uma estrutura HTML básica com título h1 "Bem-vindos ao Planeta HTML-5" 
+                        e um parágrafo explicando sua missão como desenvolvedor cósmico.
+                    </div>
+                </div>
+
+                <div class="code-section">
+                    <div class="code-label">💻 Terminal de Código Cósmico</div>
+                    <textarea 
+                        class="code-editor" 
+                        id="codeEditor" 
+                        placeholder="Digite seu código aqui..."
+                        spellcheck="false"
+                    ></textarea>
+                    <div class="buttons">
+                        <button class="btn btn-execute" onclick="executarCodigo()">🚀 Executar Código</button>
+                        <button class="btn btn-next" id="nextBtn" onclick="proximaFase()">✨ Próxima Fase</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-panel">
+                <div class="preview-section">
+                    <div class="preview-label">🌌 Visualizador Dimensional</div>
+                    <div class="preview-frame" id="previewFrame"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="feedback" id="feedback"></div>
+    <div class="particles" id="particles"></div>
+
+    <script src="static/js/script.js"></script>
+</body>
+</html>
